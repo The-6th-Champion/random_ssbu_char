@@ -1,0 +1,16 @@
+<!doctype html>
+<title>SSBU Char Gen</title>
+<body>
+    <h1>SSBU Random Character Generator</h1>
+    <hr>
+    <h2>Type a number and press enter to get that many fighters generated</h2>
+    <form method = "POST">
+        <input name ="num" type="number" placeholder="Number 1 to 10000"/>
+        <input name ="submitButton" type="submit" value="Enter"/>
+    </form>
+    <ul id="flist">
+        {% for item in flist %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</body>
