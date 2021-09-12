@@ -14,8 +14,8 @@ def hello_world():
         num = request.form['num']
         for i in get_fighter(get_random(num, r)):
             fighter_list.append(i)
-        return render_template("home.html", flist = fighter_list)
-    return render_template("home.html", flist = fighter_list)
+        return render_template("index.html", flist = fighter_list)
+    return render_template("index.html", flist = fighter_list)
 
 
 if __name__ == "__main__":
